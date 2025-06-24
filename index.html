@@ -11,31 +11,54 @@
 
 <body>
     <h1>Consultar CEP</h1>
-    <form>
-        <label for="CEP">CEP</label>
-        <input class="form-control" type="number" name="cep" id="cep">
-        <label for="CEP">Lagradouro</label>
-        <input class="form-control" type="number" name="Lagradouro" id="lagradouro">
-        <label for="CEP">N°</label>
-        <input class="form-control" type="number" name="n°" id="n°">
-        <label for="CEP">Complemento</label>
-        <input class="form-control" type="number" name="complemento" id="complemento">
-        <label for="CEP">Bairro</label>
-        <input class="form-control" type="number" name="bairro" id="bairro">
-        <label for="localidade">Localidade</label>
-        <select class="form-select" aria-label="Default select example" id="localidade">
-            <option selected>selecione</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-        </select>
-        <label for="uf">UF</label>
-        <select class="form-select" aria-label="Default select example" id="uf">
-            <option selected>selecione</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-        </select>
+    <form class="row g-3">
+        <div class="col-md-2">
+            <label for="CEP">CEP</label>
+            <input class="form-control" type="number" name="cep" id="cep">
+        </div>
+
+        <div class="col-md-6">
+            <label for="CEP">Lagradouro</label>
+            <input class="form-control" type="number" name="Lagradouro" id="lagradouro">
+        </div>
+
+        <div class="col-md-2">
+            <label for="CEP">Nº</label>
+            <input class="form-control" type="number" name="numero" id="numero">
+
+        </div>
+        <div class="col-md-10">
+            <label for="CEP">Complemento</label>
+            <input class="form-control" type="number" name="complemento" id="complemento">
+        </div>
+
+        <div class="col-md-6">
+            <label for="CEP">Bairro</label>
+            <input class="form-control" type="number" name="bairro" id="bairro">
+        </div>
+        <div class="col-md-2">
+            <label for="uf">UF</label>
+            <select class="form-select" aria-label="Default select example" id="uf">
+                <option selected>selecione</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+        </div>
+        <div class="col-md-2">
+            <label for="localidade">Localidade</label>
+            <select class="form-select" aria-label="Default select example" id="localidade">
+                <option selected>selecione</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+        </div>
+        <div class="col-md-12">
+            <button class="btn btn-success">Enviar</button>
+            <button class="btn btn-ligth" type="reset">Limpar</button>
+
+        </div>
 
     </form>
 
